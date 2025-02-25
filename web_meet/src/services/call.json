@@ -1,0 +1,23 @@
+{
+  "meet": [
+    {
+      "id": "1900",
+      "user": "asterisk",
+      "verifier": "digi",
+      "from": "1234567890",
+      "to": "0987654321",
+      "type": "offer",
+      "sdp": ""
+    },
+    {
+      "id": "1901",
+      "user": "giri",
+      "verifier": "venkat",
+      "from": "1222333444",
+      "to": "2223334441",
+      "type": "offer",
+      "sdp": ""
+    }
+  ]
+}
+  
