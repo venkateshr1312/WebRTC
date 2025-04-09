@@ -1,9 +1,16 @@
+@import "tailwindcss";
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  /* padding: 0; */
+  /* margin: 0; */
+  /* box-sizing: border-box; */
 }
 
 html,body {
@@ -106,3 +113,64 @@ body,#aaum {
         border-radius: 50%;
     }
 }
+
+/* Adding a shaking effect for the ringing button */
+@keyframes ringAnimation {
+    0% {
+      transform: translateY(0); /* No movement at start */
+    }
+    25% {
+      transform: translateY(-10px); /* Move up */
+    }
+    50% {
+      transform: translateY(10px); /* Move down */
+    }
+    75% {
+      transform: translateY(-10px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Return to original position */
+    }
+  }
+  
+  /* Apply the animation to the calling-ring class */
+  .calling-ring {
+    animation: ringAnimation 0.5s ease-in-out infinite; /* Shake animation with 0.5s duration */
+    background-color: #1cd324; /* WhatsApp green color */
+    color: white;
+    border-radius: 50%; /* Round button */
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px; /* Icon size */
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .calling-ring:hover {
+    background-color: #ff0303; /* Darker shade on hover */
+  }
+  
+  .calling-ring:active {
+    transform: scale(0.95); /* Slight shrink when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+
+  /* Button Styles */
+.btn-item.btn-start {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1cd324; /* Adjust color */
+    color: white;
+    border: none;
+    border-radius: -1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+ 
+  
+  
